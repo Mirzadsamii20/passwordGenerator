@@ -8,13 +8,14 @@ let parEl = document.getElementById('pass');
 btnEl.addEventListener('click' , passGenerator);
 
 
-let randomPass ='' ;
+ 
+let passLength = Number(prompt("Select The Password Range"));
 
 
 function passGenerator(){
     // if (randomPass == false){
-        randomPass = '';
-for(i=0; i<15; i++){
+     let   randomPass = '';
+ for(i=0; i<passLength; i++){
    
     randomPass += characters[Math.floor(Math.random()*characters.length)];
      
