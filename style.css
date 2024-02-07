@@ -1,0 +1,86 @@
+body{
+     box-sizing: border-box;
+    background-color:  #1F2937;
+    color: white;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+ 
+    
+}
+
+.container{
+    width: 500px;
+   
+}
+#label{
+    display: block;
+    margin-bottom: 20px;
+}
+#input{
+    min-height: 25px;
+    background-color:gray;
+    border: none;
+
+}
+
+
+.spanPass{
+    color: #4ADF86;
+}
+
+#slogan{
+    color: #D5D4D8;
+}
+
+.btnGen{
+    width: 250px;
+    background-color: #4ADF86;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight:bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 4px;
+}
+
+.btnGen:hover{
+    background-color: white;
+    color: #4ADF86;
+    zoom: 1.3;
+    
+}
+
+
+.first-div ,.second-div{
+    display:inline-block;
+    width: 220px;
+    min-height: 35px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color:#273549;
+    color:#55F991;
+
+
+ }
+
+ #copyBtn{
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    padding: 5px;
+    border-radius: 40%;
+    background-color: #4ADF86;
+ 
+ }
+
+ #copyBtn:hover{
+    background-color: white;
+    color: #4ADF86;
+    zoom: 1.3   ;
+ }
+
+
+  

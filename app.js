@@ -2,13 +2,14 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 let btnEl = document.getElementById("btnGen");
-let parEl = document.getElementById('pass');
+let spanOneEl = document.getElementById('passField1');
 let inputEl = document.getElementById('input');
+let spanTwoEl = document.getElementById('passField2');
 
 
 
 
-btnEl.addEventListener('click' , passGenerator);
+btnEl.addEventListener('click' , click);
 
 
  
@@ -17,16 +18,25 @@ btnEl.addEventListener('click' , passGenerator);
 
 
 function passGenerator(){
+
     let passLength = Number(inputEl.value);
-    console.log(passLength)
+    // console.log(passLength)
     // if (randomPass == false){
      let   randomPass = '';
- for(i=0; i<passLength; i++){
+     if(passLength > 14 && passLength <26){ for(i=0; i<passLength; i++){
    
-    randomPass += characters[Math.floor(Math.random()*characters.length)];
+        randomPass += characters[Math.floor(Math.random()*characters.length)];
+         
+     }
+      return randomPass;}
+      else return("Please enter a value from 15 to 25");
      
- }
-  parEl.textContent = randomPass;
-  console.log(randomPass.length)
+
+//   console.log(randomPass.length)
 }
 
+
+function click(){
+    spanOneEl.textContent = passGenerator();
+    spanTwoEl.textContent = passGenerator();
+}
