@@ -3,16 +3,22 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let btnEl = document.getElementById("btnGen");
 let parEl = document.getElementById('pass');
+let inputEl = document.getElementById('input');
+
+
 
 
 btnEl.addEventListener('click' , passGenerator);
 
 
  
-let passLength = Number(prompt("Select The Password Range"));
+// let passLength = Number(prompt("Select The Password Range"));
+
 
 
 function passGenerator(){
+    let passLength = Number(inputEl.value);
+    console.log(passLength)
     // if (randomPass == false){
      let   randomPass = '';
  for(i=0; i<passLength; i++){
