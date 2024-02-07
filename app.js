@@ -40,3 +40,5 @@ function click(){
     spanOneEl.textContent = passGenerator();
     spanTwoEl.textContent = passGenerator();
 }
+
+ 
